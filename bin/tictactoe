@@ -18,6 +18,8 @@ def start
     Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new).play
   elsif input == "2" 
     puts "Two Player"
+    puts "X Goes First!"
+    Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
   elsif input == "0" 
     puts "Computer vs Computer"
   else 
