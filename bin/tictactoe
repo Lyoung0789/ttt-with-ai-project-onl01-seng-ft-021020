@@ -14,6 +14,8 @@ def start
   
   if input == 1
     puts "Single Player" 
+    puts "You go first"
+    Game.new(Players::Human.new("X"), Players::Computer("O"), Board.new).play
   elsif input ==2 
     puts "Two Player"
   elsif input ==0 
