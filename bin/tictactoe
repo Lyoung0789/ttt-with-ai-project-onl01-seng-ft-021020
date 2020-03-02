@@ -22,6 +22,8 @@ def start
     Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new).play
   elsif input == "0" 
     puts "Computer vs Computer"
+    puts "Sit back and watch the Computers play!!"
+    Game.new(Players:;Computer.new("X"), Players::Computer.new("O"), Board.new).play
   else 
       puts "Please input a valid option"
       input = gets.chomp
