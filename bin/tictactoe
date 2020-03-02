@@ -12,13 +12,13 @@ def start
   puts "Enter 1 for player vs computer\nEnter 2 for player vs player\nEnter 0 for computer vs computer"
   input = gets.chomp
   
-  if input == 1
+  if input == "1"
     puts "Single Player" 
     puts "You go first"
     Game.new(Players::Human.new("X"), Players::Computer("O"), Board.new).play
-  elsif input ==2 
+  elsif input == "2" 
     puts "Two Player"
-  elsif input ==0 
+  elsif input == "0" 
     puts "Computer vs Computer"
   else 
       puts "Please input a valid option"
